@@ -13,6 +13,9 @@
 		252E95062CD6810A0080D396 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 252E95052CD6810A0080D396 /* Base */; };
 		252E95082CD6810C0080D396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252E95072CD6810C0080D396 /* Assets.xcassets */; };
 		252E950B2CD6810C0080D396 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 252E950A2CD6810C0080D396 /* Base */; };
+		252E95172CD6C7AB0080D396 /* VideoTrimmingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E95162CD6C7AB0080D396 /* VideoTrimmingViewController.swift */; };
+		252E95192CD6C94C0080D396 /* VideoTrimmingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252E95182CD6C94C0080D396 /* VideoTrimmingViewController.storyboard */; };
+		252E951D2CD6DD250080D396 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E951C2CD6DD250080D396 /* RangeSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		252E95072CD6810C0080D396 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		252E950A2CD6810C0080D396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		252E950C2CD6810C0080D396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		252E95162CD6C7AB0080D396 /* VideoTrimmingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTrimmingViewController.swift; sourceTree = "<group>"; };
+		252E95182CD6C94C0080D396 /* VideoTrimmingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoTrimmingViewController.storyboard; sourceTree = "<group>"; };
+		252E951C2CD6DD250080D396 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				252E95072CD6810C0080D396 /* Assets.xcassets */,
 				252E95092CD6810C0080D396 /* LaunchScreen.storyboard */,
 				252E950C2CD6810C0080D396 /* Info.plist */,
+				252E95162CD6C7AB0080D396 /* VideoTrimmingViewController.swift */,
+				252E95182CD6C94C0080D396 /* VideoTrimmingViewController.storyboard */,
+				252E951C2CD6DD250080D396 /* RangeSlider.swift */,
 			);
 			path = VideoTrimAndFilters;
 			sourceTree = "<group>";
@@ -127,6 +136,7 @@
 			files = (
 				252E95082CD6810C0080D396 /* Assets.xcassets in Resources */,
 				252E950B2CD6810C0080D396 /* Base in Resources */,
+				252E95192CD6C94C0080D396 /* VideoTrimmingViewController.storyboard in Resources */,
 				252E95062CD6810A0080D396 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				252E95032CD6810A0080D396 /* MainViewController.swift in Sources */,
+				252E951D2CD6DD250080D396 /* RangeSlider.swift in Sources */,
 				252E94FF2CD6810A0080D396 /* AppDelegate.swift in Sources */,
 				252E95012CD6810A0080D396 /* SceneDelegate.swift in Sources */,
+				252E95172CD6C7AB0080D396 /* VideoTrimmingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
