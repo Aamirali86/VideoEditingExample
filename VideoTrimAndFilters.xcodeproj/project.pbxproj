@@ -62,18 +62,34 @@
 		252E94FD2CD6810A0080D396 /* VideoTrimAndFilters */ = {
 			isa = PBXGroup;
 			children = (
+				252E951F2CD705800080D396 /* CustomView */,
+				252E951E2CD705490080D396 /* Scenes */,
 				252E94FE2CD6810A0080D396 /* AppDelegate.swift */,
 				252E95002CD6810A0080D396 /* SceneDelegate.swift */,
-				252E95022CD6810A0080D396 /* MainViewController.swift */,
-				252E95042CD6810A0080D396 /* Main.storyboard */,
 				252E95072CD6810C0080D396 /* Assets.xcassets */,
 				252E95092CD6810C0080D396 /* LaunchScreen.storyboard */,
 				252E950C2CD6810C0080D396 /* Info.plist */,
-				252E95162CD6C7AB0080D396 /* VideoTrimmingViewController.swift */,
-				252E95182CD6C94C0080D396 /* VideoTrimmingViewController.storyboard */,
-				252E951C2CD6DD250080D396 /* RangeSlider.swift */,
 			);
 			path = VideoTrimAndFilters;
+			sourceTree = "<group>";
+		};
+		252E951E2CD705490080D396 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				252E95022CD6810A0080D396 /* MainViewController.swift */,
+				252E95042CD6810A0080D396 /* Main.storyboard */,
+				252E95162CD6C7AB0080D396 /* VideoTrimmingViewController.swift */,
+				252E95182CD6C94C0080D396 /* VideoTrimmingViewController.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		252E951F2CD705800080D396 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				252E951C2CD6DD250080D396 /* RangeSlider.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
