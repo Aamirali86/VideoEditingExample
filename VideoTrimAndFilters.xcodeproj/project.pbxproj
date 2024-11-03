@@ -16,6 +16,8 @@
 		252E95172CD6C7AB0080D396 /* VideoTrimmingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E95162CD6C7AB0080D396 /* VideoTrimmingViewController.swift */; };
 		252E95192CD6C94C0080D396 /* VideoTrimmingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252E95182CD6C94C0080D396 /* VideoTrimmingViewController.storyboard */; };
 		252E951D2CD6DD250080D396 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E951C2CD6DD250080D396 /* RangeSlider.swift */; };
+		252E95212CD70B180080D396 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E95202CD70B180080D396 /* MainViewModel.swift */; };
+		252E95232CD70C360080D396 /* VideoTrimmingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E95222CD70C360080D396 /* VideoTrimmingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		252E95162CD6C7AB0080D396 /* VideoTrimmingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTrimmingViewController.swift; sourceTree = "<group>"; };
 		252E95182CD6C94C0080D396 /* VideoTrimmingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoTrimmingViewController.storyboard; sourceTree = "<group>"; };
 		252E951C2CD6DD250080D396 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
+		252E95202CD70B180080D396 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		252E95222CD70C360080D396 /* VideoTrimmingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTrimmingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				252E95042CD6810A0080D396 /* Main.storyboard */,
 				252E95162CD6C7AB0080D396 /* VideoTrimmingViewController.swift */,
 				252E95182CD6C94C0080D396 /* VideoTrimmingViewController.storyboard */,
+				252E95202CD70B180080D396 /* MainViewModel.swift */,
+				252E95222CD70C360080D396 /* VideoTrimmingViewModel.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -165,10 +171,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				252E95032CD6810A0080D396 /* MainViewController.swift in Sources */,
+				252E95232CD70C360080D396 /* VideoTrimmingViewModel.swift in Sources */,
 				252E951D2CD6DD250080D396 /* RangeSlider.swift in Sources */,
 				252E94FF2CD6810A0080D396 /* AppDelegate.swift in Sources */,
 				252E95012CD6810A0080D396 /* SceneDelegate.swift in Sources */,
 				252E95172CD6C7AB0080D396 /* VideoTrimmingViewController.swift in Sources */,
+				252E95212CD70B180080D396 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

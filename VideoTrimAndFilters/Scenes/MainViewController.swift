@@ -6,15 +6,23 @@
 //
 
 import UIKit
-import AVKit
+import Combine
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
+    private let viewModel = MainViewModel()
     @IBOutlet private var thumbnailView: UIImageView!
-
+    private var cancellables = Set<AnyCancellable>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupImageView()
         setupNavigationBarButton()
+        
+        viewModel.$thumbnailImage
+            .compactMap { $0 }
+            .receive(on: DispatchQueue.main)
+            .assign(to: \.image, on: thumbnailView)
+            .store(in: &cancellables)
     }
 }
 
@@ -37,27 +45,9 @@ private extension MainViewController {
     func previewVideo(url: URL) {
         let storyboard = UIStoryboard(name: "VideoTrimmingViewController", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "VideoTrimmingViewController") as! VideoTrimmingViewController
-        vc.videoURL = url
+        let vm = VideoTrimmingViewModel(videoURL: url)
+        vc.viewModel = vm
         present(vc, animated: true)
-    }
-    
-    func generateThumbnail(for url: URL) {
-        let asset = AVAsset(url: url)
-        let assetImageGenerator = AVAssetImageGenerator(asset: asset)
-        assetImageGenerator.appliesPreferredTrackTransform = true
-
-        let time = CMTime(seconds: 1, preferredTimescale: 600)
-        assetImageGenerator.generateCGImagesAsynchronously(forTimes: [NSValue(time: time)]) { _, image, _, result, error in
-            if let error = error {
-                debugPrint("Error generating thumbnail: \(error)")
-                return
-            }
-            
-            guard let image = image else { return }
-            DispatchQueue.main.async { [weak self] in
-                self?.thumbnailView.image = UIImage(cgImage: image)
-            }
-        }
     }
 }
 
@@ -83,7 +73,7 @@ extension MainViewController: UIImagePickerControllerDelegate, UINavigationContr
         
         if let videoURL = info[.mediaURL] as? URL {
             previewVideo(url: videoURL)
-            generateThumbnail(for: videoURL)
+            viewModel.generateThumbnail(for: videoURL)
         }
     }
 
